@@ -1,7 +1,6 @@
-num_char = input("What is the char quantity?\n")
+num = (input())
 
-print(type(num_char))
+num1 = int(num[0])
+num2 = int(num[1])
 
-new_char = str(len(num_char))
-
-print("That has "+new_char+" characters.")
+print(num1+num2)
