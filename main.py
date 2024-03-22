@@ -1,6 +1,8 @@
-weight = float(input("Weight?(kg) "))
-height = float(input("Height?(m) "))
+# print(round(22/7,5))
+# print(round(22//7,5))
 
-BMI = weight/(height**2)
+height = 1.80
 
-print(BMI)
+#f-String
+
+print(f"Your height is {height} meter.")
