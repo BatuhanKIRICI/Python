@@ -1,11 +1,8 @@
-total = float(input("Total money: "))
+print(f"Welcome to the rollercoaster!")
 
-percent = int(input("How much percent? "))/100
+height = int(input(f"Input your height(cm):\n"))
 
-bill_total = total + total*percent
-
-person = int(input("How many people? "))
-
-bill_per_person = bill_total/person
-
-print(round(bill_per_person,2))
+if height > 120:
+    print(f"Welcome on board!")
+else:
+    print(f"Get bigger!")
