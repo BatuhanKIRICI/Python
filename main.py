@@ -1,8 +1,11 @@
-# print(round(22/7,5))
-# print(round(22//7,5))
+total = float(input("Total money: "))
 
-height = 1.80
+percent = int(input("How much percent? "))/100
 
-#f-String
+bill_total = total + total*percent
 
-print(f"Your height is {height} meter.")
+person = int(input("How many people? "))
+
+bill_per_person = bill_total/person
+
+print(round(bill_per_person,2))
