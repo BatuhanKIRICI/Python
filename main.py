@@ -1,8 +1,6 @@
-print(f"Welcome to the rollercoaster!")
+number = int(input(f"Input a random number:\n"))
 
-height = int(input(f"Input your height(cm):\n"))
-
-if height > 120:
-    print(f"Welcome on board!")
+if(number%2==0):
+    print(f"The number is even.")
 else:
-    print(f"Get bigger!")
+    print(f"The number is odd.")
