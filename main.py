@@ -1,13 +1,15 @@
-height =  int(input("Enter your height in cm:\n"))
-limit_age = 12
+height = float(input("Enter your height in m:\n"))
+weight = int(input("Enter your weight in kg:\n"))
 
-if height < 120:
-    print(f"YOu are not allowed to enter.")
+BMI = round((weight / height**2), 2)
+
+if BMI <= 18.29:
+    print(f"Your BMI is {BMI}.You are underweight.")
+elif BMI > 18.29 and BMI <= 22:
+    print(f"Your BMI is {BMI}.You have normalweight.")
+elif BMI > 22 and BMI <= 28.51:
+    print(f"Your BMI is {BMI}.You are slightly overweight.")
+elif BMI > 28.51 and BMI <= 32.56:
+    print(f"Your BMI is {BMI}.You are obese.")
 else:
-    age =  int(input("Enter your age:\n"))
-    if age >= 18:
-        print(f"You need to pay 12$")
-    elif age >= 12 and age <18:
-        print(f"You need to pay 7$")
-    else:
-        print(f"You are smaller than {limit_age}. You need to pay 5$.")
+    print(f"Your BMI is {BMI}.You are clinically obese.")
