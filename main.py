@@ -1,6 +1,10 @@
-number = int(input(f"Input a random number:\n"))
+height =  int(input("Enter your height in cm:\n"))
 
-if(number%2==0):
-    print(f"The number is even.")
+if height < 120:
+    print(f"YOu are not allowed to enter.")
 else:
-    print(f"The number is odd.")
+    age =  int(input("Enter your age:\n"))
+    if age >= 18:
+        print(f"You need to pay 12$")
+    else:
+        print(f"You need to pay 7$")
