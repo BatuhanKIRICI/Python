@@ -1,17 +1,8 @@
 import random
-import my_module
 
-# rand_int = random.randint(1, 10)
-# print(rand_int)
+coin = random.randint(0, 1)
 
-print(my_module.pi)
-
-rand_float = random.random()
-
-print(rand_float)
-
-rand_decimal = random.random()
-
-rand_0_to_5 = round(5 * (rand_decimal))
-
-print(rand_0_to_5)
+if coin == 0:
+    print("Head")
+else:
+    print("Tail")
