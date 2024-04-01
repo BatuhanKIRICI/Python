@@ -37,24 +37,22 @@ comp_selection = computer[rand_num]
 player_selection = input("Rock, Paper, or Scissors?\n").lower()
 
 if player_selection == "rock" and comp_selection == paper:
-    print(f"{comp_selection}\n{player_selection}\n\nYou lose!")
+    print(f"{comp_selection}\n\n{rock}\n\nYou lose!")
 elif player_selection == "rock" and comp_selection == rock:
-    print(f"{comp_selection}\n{player_selection}\n\nDraw!")
+    print(f"{comp_selection}\n\n{rock}\n\nDraw!")
 elif player_selection == "rock" and comp_selection == scissors:
-    print(f"{comp_selection}\n{player_selection}\n\nYou win!")
+    print(f"{comp_selection}\n\n{rock}\n\nYou win!")
 
 elif player_selection == "paper" and comp_selection == paper:
-    print(f"{comp_selection}\n{player_selection}\n\nDraw!")
+    print(f"{comp_selection}\n\n{paper}\n\nDraw!")
 elif player_selection == "paper" and comp_selection == rock:
-    print(f"{comp_selection}\n{player_selection}\n\nYou win!")
+    print(f"{comp_selection}\n\n{paper}\n\nYou win!")
 elif player_selection == "paper" and comp_selection == scissors:
-    print(f"{comp_selection}\n{player_selection}\n\nYou lose!")
+    print(f"{comp_selection}\n\n{paper}\n\nYou lose!")
 
 if player_selection == "scissors" and comp_selection == paper:
-    print(f"{comp_selection}\n{player_selection}\n\nYou win!")
+    print(f"{comp_selection}\n\n{scissors}\n\nYou win!")
 elif player_selection == "scissors" and comp_selection == rock:
-    print(f"{comp_selection}\n{player_selection}\n\nYou lose!")
+    print(f"{comp_selection}\n\n{scissors}\n\nYou lose!")
 elif player_selection == "scissors" and comp_selection == scissors:
-    print(f"{comp_selection}\n{player_selection}\n\nDraw!")
-elif player_selection != ("rock" or "paper" or "scissors"):
-    print("You've typed wrong!")
+    print(f"{comp_selection}\n\n{scissors}\n\nDraw!")
