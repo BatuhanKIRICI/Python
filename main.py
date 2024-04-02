@@ -1,10 +1,11 @@
-student_heights = input().split()
-print(student_heights)
-for n in range(0, len(student_heights)):
-    student_heights[n] = int(student_heights[n])
+student_scores = input().split()
+for n in range(0, len(student_scores)):
+    student_scores[n] = int(student_scores[n])
 
-total_height = 0
-for height in student_heights:
-    total_height += height
+highest_score = 0
 
-print(round(total_height / (len(student_heights))))
+for score in student_scores:
+    if score > highest_score:
+        highest_score = score
+
+print(highest_score)
