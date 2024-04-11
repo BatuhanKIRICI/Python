@@ -1,10 +1,12 @@
-target = int(input())
+fizzbuzz = range(1, 101)
 
-total_even = 0
+for num in fizzbuzz:
+    if num % 3 == 0 and num % 5 != 0:
+        num = "fizz"
 
-for num in range(0, target):
-    if num % 2 == 0:
-        total_even += num
-    else:
-        total_even
-print(total_even)
+    elif num % 3 != 0 and num % 5 == 0:
+        num = "buzz"
+
+    elif num % 3 == 0 and num % 5 == 0:
+        num = "fizzbuzz"
+    print(num)
