@@ -1,5 +1,10 @@
-total = 0
+target = int(input())
 
-for num in range(1, 101):
-    total += num
-print(total)
+total_even = 0
+
+for num in range(0, target):
+    if num % 2 == 0:
+        total_even += num
+    else:
+        total_even
+print(total_even)
