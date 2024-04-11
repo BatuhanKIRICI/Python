@@ -1,11 +1,5 @@
-student_scores = input().split()
-for n in range(0, len(student_scores)):
-    student_scores[n] = int(student_scores[n])
+total = 0
 
-highest_score = 0
-
-for score in student_scores:
-    if score > highest_score:
-        highest_score = score
-
-print(highest_score)
+for num in range(1, 101):
+    total += num
+print(total)
