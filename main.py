@@ -1,12 +1,18 @@
-fizzbuzz = range(1, 101)
+# num_of_char = len("HElloworld wassup!")
 
-for num in fizzbuzz:
-    if num % 3 == 0 and num % 5 != 0:
-        num = "fizz"
+# print(num_of_char)
 
-    elif num % 3 != 0 and num % 5 == 0:
-        num = "buzz"
 
-    elif num % 3 == 0 and num % 5 == 0:
-        num = "fizzbuzz"
-    print(num)
+def my_function():
+    print("Hello")
+    print(8 + 9)
+
+
+my_function()
+
+
+def compound_func():
+    my_function()
+
+
+compound_func()
