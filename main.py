@@ -1,18 +1,5 @@
-# num_of_char = len("HElloworld wassup!")
+num = 10
 
-# print(num_of_char)
-
-
-def my_function():
-    print("Hello")
-    print(8 + 9)
-
-
-my_function()
-
-
-def compound_func():
-    my_function()
-
-
-compound_func()
+while num > 0:
+    print(num)
+    num -= 1
