@@ -1,5 +1,1 @@
-num = 10
-
-while num > 0:
-    print(num)
-    num -= 1
+print(2**3**2)
