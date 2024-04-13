@@ -1,11 +1,8 @@
-def square(x):
-    return x * x
+print('''"Oh no", she exclaimed, "Ben's bike is broken!"''')
+print("""What's your "code" editor?""")
 
-
-def sub(x, y):
-    return x - y
-
-
-print(square(3) + 5)
-
-print(sub(square(5), sub(6, 3)))
+print(
+    """This message will span several 
+      lines
+of the text."""
+)
