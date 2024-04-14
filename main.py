@@ -1,8 +1,5 @@
-print('''"Oh no", she exclaimed, "Ben's bike is broken!"''')
-print("""What's your "code" editor?""")
+print(int(-3.99))
 
-print(
-    """This message will span several 
-      lines
-of the text."""
-)
+print(int(4.6565))
+
+print(float(5))
