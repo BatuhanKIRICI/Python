@@ -1,15 +1,18 @@
 import turtle
 
 wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+tess = turtle.Turtle()
+tess.color("blue")
+tess.shape("turtle")
 
-elan = turtle.Turtle()
-
-distance = 10
-elan.speed(5)
+dist = 5
+tess.up()
 
 for _ in range(30):
-    elan.forward(distance)
-    elan.left(90)
-    distance += 10
+    tess.stamp()
+    tess.forward(dist)
+    tess.right(24)
+    dist += 2
 
 wn.exitonclick()
