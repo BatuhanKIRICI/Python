@@ -1,5 +1,15 @@
-for _ in range(3):
-    print("Hello")
-    print("Hello again!")
+import turtle
 
-print("Hello finally!")
+wn = turtle.Screen()
+
+elan = turtle.Turtle()
+
+distance = 10
+elan.speed(5)
+
+for _ in range(30):
+    elan.forward(distance)
+    elan.left(90)
+    distance += 10
+
+wn.exitonclick()
