@@ -1,18 +1,16 @@
-import turtle
+# import random
 
-wn = turtle.Screen()
-wn.bgcolor("lightgreen")
-tess = turtle.Turtle()
-tess.color("blue")
-tess.shape("turtle")
+# prob = random.random()
+# print(prob)
 
-dist = 5
-tess.up()
+# dice_throw = random.randrange(1, 7)
+# print(dice_throw)
 
-for _ in range(30):
-    tess.stamp()
-    tess.forward(dist)
-    tess.right(24)
-    dist += 2
+from random import randrange, random
 
-wn.exitonclick()
+prob = random()
+
+print(prob)
+
+diceThrow = randrange(1, 7)
+print(diceThrow)
