@@ -1,16 +1,17 @@
-# import random
+# def greet():
+#     print("Hello")
+#     print("World")
+#     print("!")
 
-# prob = random.random()
-# print(prob)
 
-# dice_throw = random.randrange(1, 7)
-# print(dice_throw)
+# greet()
 
-from random import randrange, random
 
-prob = random()
+def greet_by_name(name):
+    print(f"Hello {name}!")
+    print(f"Hi {name}!")
 
-print(prob)
 
-diceThrow = randrange(1, 7)
-print(diceThrow)
+greet_by_name("Adam")
+
+greet_by_name("Alex")
