@@ -1,10 +1,14 @@
-def paint_calc(h, w, c):
-    print(round((h * w) / c))
+def prime_number(n):
+    is_prime = True
+    for i in range(2, n):
+        if n % i == 0:
+            is_prime = False
+    if is_prime == True:
+        print("This is a prime number.")
+    else:
+        print("This is not a prime number.")
 
 
-coverage = 5
+number = int(input("Enter a number: "))
 
-height = int(input("Height? "))
-width = int(input("Width? "))
-
-paint_calc(w=width, c=coverage, h=height)
+prime_number(n=number)
