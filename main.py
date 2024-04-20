@@ -1,7 +1,10 @@
-def greet_with(name="Alex", location="Dallas"):
-    print(f"I'm {name} from {location}.")
+def paint_calc(h, w, c):
+    print(round((h * w) / c))
 
 
-# greet_with()
+coverage = 5
 
-greet_with(location="Madrid", name="Jose")
+height = int(input("Height? "))
+width = int(input("Width? "))
+
+paint_calc(w=width, c=coverage, h=height)
