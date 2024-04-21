@@ -1,14 +1,71 @@
-def prime_number(n):
-    is_prime = True
-    for i in range(2, n):
-        if n % i == 0:
-            is_prime = False
-    if is_prime == True:
-        print("This is a prime number.")
-    else:
-        print("This is not a prime number.")
+alphabet = [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+]
+
+direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+text = input("Type your message:\n").lower()
+shift = int(input("Type the shift number:\n"))
 
 
-number = int(input("Enter a number: "))
+def encrypt(plain_text, shift_amount):
+    cipher_text = ""
+    for letter in plain_text:
+        position = alphabet.index(letter)
+        new_position = position + shift_amount
+        new_letter = alphabet[new_position]
+        cipher_text += new_letter
+    print(cipher_text)
 
-prime_number(n=number)
+
+encrypt(plain_text=text, shift_amount=shift)
