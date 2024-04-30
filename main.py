@@ -1,28 +1,24 @@
-programming_dictionary = {
-    "Bug": "An error in a program that prevents the program from running as expected.",
-    "Function": "A piece of code that you can easily call over and over again.",
-    "Loop": "The action of doing something over and over again.",
-}
+import turtle
+import math
 
-# print(programming_dictionary["Bug"])
+wn = turtle.Screen()
 
-programming_dictionary["New_Bug"] = "System failed!"
+bob = turtle.Turtle()
 
-# print(programming_dictionary["New_Bug"])
+bob.right(90)
+bob.forward(50)
+bob.left(90)
+bob.forward(50)
+bob.left(90)
+bob.forward(50)
+bob.left(90)
+bob.forward(50)
+bob.right(135)
 
-# Create a new dictionary
-empty_dictionary = {}
+distance = math.sqrt(50 * 50 / 2)
 
-# Wiping an existing dictionary
-programming_dictionary = {}
+bob.forward(distance)
+bob.right(90)
+bob.forward(distance)
 
-# print(programming_dictionary)
-
-# Edit an item in dictionary
-programming_dictionary["Bug"] = "A moth in your computer."
-
-# print(programming_dictionary)
-
-for thing in programming_dictionary:
-    print(thing)
-    print(programming_dictionary[thing])
+wn.exitonclick()
