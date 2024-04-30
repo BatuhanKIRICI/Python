@@ -4,4 +4,8 @@ programming_dictionary = {
     "Loop": "The action of doing something over and over again.",
 }
 
-print(programming_dictionary)
+print(programming_dictionary["Bug"])
+
+programming_dictionary["New_Bug"] = "System failed!"
+
+print(programming_dictionary["New_Bug"])
