@@ -1,1 +1,3 @@
-print("int(53.785)")
+x = "hello world"
+
+print(x[:7])
