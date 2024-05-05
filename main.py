@@ -1,18 +1,15 @@
-song = "This state is elevating..."
-numbers = "1,2,3 4 5"
-number = str(1325651556)
+# name_list = ["Adam", "Abraham", "Noah", "Moses", "Jesus", "Mohammad"]
 
-add = "\\"
+# for name in name_list:
+#     print(name)
 
-new_list = song.split()
-new_list_2 = numbers.split()
-new_list_3 = number.split()
-new_list_4 = song.split("is")
-new_list_5 = add.join(song)
+# name = "Herzlich Willkommen!"
 
+# for x in name:
+#     print(x)
 
-print(new_list)
-print(new_list_2)
-print(new_list_3)
-print(new_list_4)
-print(new_list_5)
+a = "Python rocks!!!"
+
+for x in a[3:8]:
+    print("Hello")
+    print(x)
