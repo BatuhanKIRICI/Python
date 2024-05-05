@@ -1,11 +1,8 @@
-import turtle
+nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-wn = turtle.Screen()
-alex = turtle.Turtle()
+accum = 0
 
-for color in ["yellow", "red", "green", "blue"]:
-    alex.color(color)
-    alex.forward(50)
-    alex.left(90)
+for x in nums:
+    accum += x
 
-wn.exitonclick()
+print(accum)
