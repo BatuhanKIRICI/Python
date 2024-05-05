@@ -1,15 +1,11 @@
-# name_list = ["Adam", "Abraham", "Noah", "Moses", "Jesus", "Mohammad"]
+import turtle
 
-# for name in name_list:
-#     print(name)
+wn = turtle.Screen()
+alex = turtle.Turtle()
 
-# name = "Herzlich Willkommen!"
+for color in ["yellow", "red", "green", "blue"]:
+    alex.color(color)
+    alex.forward(50)
+    alex.left(90)
 
-# for x in name:
-#     print(x)
-
-a = "Python rocks!!!"
-
-for x in a[3:8]:
-    print("Hello")
-    print(x)
+wn.exitonclick()
