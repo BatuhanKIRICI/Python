@@ -1,7 +1,9 @@
-n = ["word", "phrase", 8, ("beam")]
+original_str = "The quick brown rhino jumped over the extremely lazy fox."
 
-for i in n:
-    print(type(i))
-    print(i)
+num_chars = 0
+chars = ""
 
-print(type(i))
+for i in original_str:
+    chars += i
+
+print(len(chars))
