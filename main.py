@@ -1,24 +1,13 @@
-# original_str = "The quick brown rhino jumped over the extremely lazy fox"
+print("pp" in "apple")
 
-# num_list = original_str.split(" ")
+print("5" in "153")
 
-# # print(num_words_list)
+print("pe" in "apple")
 
-# num_words_list = []
+print("" in "pear")
 
-# for i in num_list:
-#     num_list = num_words_list.append(len(i))
+print(" " in "Hello World")
 
-# print(num_words_list)
+print("x" not in "apple")
 
-import turtle
-
-wn = turtle.Screen()
-alex = turtle.Turtle()
-
-for i in range(100):
-    alex.speed(i + 1)
-    alex.forward(10)
-    alex.left(i + 10)
-
-wn.exitonclick()
+print("a" in ["apple", "pear", "banana"])
