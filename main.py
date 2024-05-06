@@ -1,12 +1,24 @@
-week_temps_f = "75.1,77.7,83.2,82.5,81.0,79.5,85.7"
+# original_str = "The quick brown rhino jumped over the extremely lazy fox"
 
-temps_list = week_temps_f.split(",")
+# num_list = original_str.split(" ")
 
-sum = 0
+# # print(num_words_list)
 
-for x in temps_list:
-    sum += float(x)
+# num_words_list = []
 
-avg_temp = sum / (len(temps_list))
+# for i in num_list:
+#     num_list = num_words_list.append(len(i))
 
-print(avg_temp)
+# print(num_words_list)
+
+import turtle
+
+wn = turtle.Screen()
+alex = turtle.Turtle()
+
+for i in range(100):
+    alex.speed(i + 1)
+    alex.forward(10)
+    alex.left(i + 10)
+
+wn.exitonclick()
