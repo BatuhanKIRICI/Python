@@ -1,9 +1,12 @@
-original_str = "The quick brown rhino jumped over the extremely lazy fox."
+week_temps_f = "75.1,77.7,83.2,82.5,81.0,79.5,85.7"
 
-num_chars = 0
-chars = ""
+temps_list = week_temps_f.split(",")
 
-for i in original_str:
-    chars += i
+sum = 0
 
-print(len(chars))
+for x in temps_list:
+    sum += float(x)
+
+avg_temp = sum / (len(temps_list))
+
+print(avg_temp)
