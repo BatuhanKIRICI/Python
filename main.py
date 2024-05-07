@@ -28,25 +28,35 @@
 
 # print(count)
 
-items = [
-    "whirring",
-    "wow!",
-    "calendar",
-    "wry",
-    "glass",
-    "",
-    "llama",
-    "tumultuous",
-    "owing",
-]
+# items = [
+#     "whirring",
+#     "wow!",
+#     "calendar",
+#     "wry",
+#     "glass",
+#     "",
+#     "llama",
+#     "tumultuous",
+#     "owing",
+# ]
 
-acc_num = 0
+# acc_num = 0
 
-for item in items:
-    if "w" in item:
-        acc_num += 1
+# for item in items:
+#     if "w" in item:
+#         acc_num += 1
 
-# for w in items:
-#     acc_num += 1
 
-print(acc_num)
+# print(acc_num)
+
+sentence = "python is a high level general purpose programming language that can be applied to many different classes of problems."
+
+num_a_or_e = 0
+
+new_sentence = sentence.split()
+
+for word in new_sentence:
+    if "a" in word or "e" in word:
+        num_a_or_e += 1
+
+print(num_a_or_e)
