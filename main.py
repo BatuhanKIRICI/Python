@@ -49,14 +49,29 @@
 
 # print(acc_num)
 
-sentence = "python is a high level general purpose programming language that can be applied to many different classes of problems."
+# sentence = "python is a high level general purpose programming language that can be applied to many different classes of problems."
 
-num_a_or_e = 0
+# num_a_or_e = 0
 
-new_sentence = sentence.split()
+# new_sentence = sentence.split()
 
-for word in new_sentence:
-    if "a" in word or "e" in word:
-        num_a_or_e += 1
+# for word in new_sentence:
+#     if "a" in word or "e" in word:
+#         num_a_or_e += 1
 
-print(num_a_or_e)
+# print(num_a_or_e)
+
+s = "singing in the rain and playing in the rain are two entirely different situations but both can be fun"
+vowels = ["a", "e", "i", "o", "u"]
+
+new_s = list(s)
+
+num_vowels = 0
+
+
+for item in new_s:
+    for a in vowels:
+        if a in item:
+            num_vowels += 1
+
+print(num_vowels)
