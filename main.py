@@ -14,16 +14,39 @@
 # print(num_rainy_months)
 
 
-sentence = "students flock to the arb for a variety of outdoor activities such as jogging and picnicking"
+# sentence = "students flock to the arb for a variety of outdoor activities such as jogging and picnicking"
 
-new_list = sentence.split(" ")
+# new_list = sentence.split(" ")
 
-count = 0
+# count = 0
 
-# print(new_list)
+# # print(new_list)
 
-for x in new_list:
-    if x[0] == x[len(x) - 1]:
-        count += 1
+# for x in new_list:
+#     if x[0] == x[len(x) - 1]:
+#         count += 1
 
-print(count)
+# print(count)
+
+items = [
+    "whirring",
+    "wow!",
+    "calendar",
+    "wry",
+    "glass",
+    "",
+    "llama",
+    "tumultuous",
+    "owing",
+]
+
+acc_num = 0
+
+for item in items:
+    if "w" in item:
+        acc_num += 1
+
+# for w in items:
+#     acc_num += 1
+
+print(acc_num)
