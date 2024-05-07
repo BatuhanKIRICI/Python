@@ -1,13 +1,14 @@
-print("pp" in "apple")
+rainfall_mi = "1.65, 1.46, 2.05, 3.03, 3.35, 3.46, 2.83, 3.23, 3.5, 2.52, 2.8, 1.85"
 
-print("5" in "153")
+num_rainy_months = 0
 
-print("pe" in "apple")
+rainfall_int = rainfall_mi.split(", ")
 
-print("" in "pear")
+# print(rainfall_int)
 
-print(" " in "Hello World")
+for x in rainfall_int:
+    x = float(x)
+    if x > 3:
+        num_rainy_months += 1
 
-print("x" not in "apple")
-
-print("a" in ["apple", "pear", "banana"])
+print(num_rainy_months)
