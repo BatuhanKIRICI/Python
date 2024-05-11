@@ -1,7 +1,16 @@
-alist = ["a", "b", "c", "d", "e"]
+a = "banana"
 
-print(alist)
+b = "banan"
 
-del alist[-1]
+print(a is not b)
 
-print(alist)
+list_1 = [75, 76, 77]
+list_2 = [75, 76, 77]
+
+print(list_1 == list_2)
+
+print(id(list_1))
+print(id(list_2))
+
+print(id(a))
+print(id(b))
