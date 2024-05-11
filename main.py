@@ -1,21 +1,8 @@
-# a = "banana"
+alist = [4, 2, 8, 6, 5]
+blist = alist * 2
 
-# b = "banan"
+print(blist)
 
-# print(a is not b)
+blist[3] = 999
 
-list_1 = [75, 76, 77]
-list_2 = [75, 76, 77]
-
-print(list_1 == list_2)
-print(list_1 is list_2)
-
-list_1 = list_2
-
-print(list_1 is list_2)
-
-# print(id(list_1))
-# print(id(list_2))
-
-# print(id(a))
-# print(id(b))
+print(blist)
