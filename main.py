@@ -1,6 +1,7 @@
-greeting = "Hello World!"
+alist = ["a", "b", "c", "d", "e"]
 
-new_greeting = "J" + greeting[1:]
+print(alist)
 
-print(new_greeting)
-print(greeting)
+del alist[-1]
+
+print(alist)
