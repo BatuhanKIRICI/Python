@@ -1,25 +1,6 @@
-# fruit = ["banana", "apple", "pear"]
+greeting = "Hello World!"
 
-# print(fruit)
+new_greeting = "J" + greeting[1:]
 
-# fruit[0] = "melon"
-# fruit[-1] = "cherry"
-
-
-# print(fruit)
-
-# alist = ["a", "b", "c", "d", "e"]
-
-# print(alist)
-
-# alist[1:3] = ["x", "y"]
-
-# print(alist)
-
-num_list = [0, 1, 2, 3, 4, 5]
-
-print(num_list)
-
-num_list[2:5] = []
-
-print(num_list)
+print(new_greeting)
+print(greeting)
