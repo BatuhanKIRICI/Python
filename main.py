@@ -1,77 +1,25 @@
-# rainfall_mi = "1.65, 1.46, 2.05, 3.03, 3.35, 3.46, 2.83, 3.23, 3.5, 2.52, 2.8, 1.85"
+# fruit = ["banana", "apple", "pear"]
 
-# num_rainy_months = 0
+# print(fruit)
 
-# rainfall_int = rainfall_mi.split(", ")
-
-# # print(rainfall_int)
-
-# for x in rainfall_int:
-#     x = float(x)
-#     if x > 3:
-#         num_rainy_months += 1
-
-# print(num_rainy_months)
+# fruit[0] = "melon"
+# fruit[-1] = "cherry"
 
 
-# sentence = "students flock to the arb for a variety of outdoor activities such as jogging and picnicking"
+# print(fruit)
 
-# new_list = sentence.split(" ")
+# alist = ["a", "b", "c", "d", "e"]
 
-# count = 0
+# print(alist)
 
-# # print(new_list)
+# alist[1:3] = ["x", "y"]
 
-# for x in new_list:
-#     if x[0] == x[len(x) - 1]:
-#         count += 1
+# print(alist)
 
-# print(count)
+num_list = [0, 1, 2, 3, 4, 5]
 
-# items = [
-#     "whirring",
-#     "wow!",
-#     "calendar",
-#     "wry",
-#     "glass",
-#     "",
-#     "llama",
-#     "tumultuous",
-#     "owing",
-# ]
+print(num_list)
 
-# acc_num = 0
+num_list[2:5] = []
 
-# for item in items:
-#     if "w" in item:
-#         acc_num += 1
-
-
-# print(acc_num)
-
-# sentence = "python is a high level general purpose programming language that can be applied to many different classes of problems."
-
-# num_a_or_e = 0
-
-# new_sentence = sentence.split()
-
-# for word in new_sentence:
-#     if "a" in word or "e" in word:
-#         num_a_or_e += 1
-
-# print(num_a_or_e)
-
-s = "singing in the rain and playing in the rain are two entirely different situations but both can be fun"
-vowels = ["a", "e", "i", "o", "u"]
-
-new_s = list(s)
-
-num_vowels = 0
-
-
-for item in new_s:
-    for a in vowels:
-        if a in item:
-            num_vowels += 1
-
-print(num_vowels)
+print(num_list)
