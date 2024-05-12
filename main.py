@@ -1,32 +1,11 @@
-my_list = []
+new_line = "   Hello World!   "
 
-my_list.append(5)
-my_list.append(25)
-my_list.append(60)
-my_list.append(60)
-my_list.append("60")
+print(new_line)
 
-# print(my_list)
-# print(my_list.index("60"))
+new_line_2 = "***" + new_line.strip() + "***"
 
-my_list.insert(1, 133)
+print(new_line_2)
 
-# print(my_list)
-# print(my_list.count(60))
+new_line_3 = new_line_2.replace("*", "+")
 
-# print(my_list.index("60"))
-
-my_list.reverse()
-
-# print(my_list)
-
-my_list.remove("60")
-
-my_list.sort()
-# my_list.reverse()
-
-print(my_list)
-
-new_item = my_list.pop()
-
-print(my_list, new_item)
+print(new_line_3)
