@@ -1,11 +1,39 @@
-new_line = "   Hello World!   "
+# sports = [
+#     "cricket",
+#     "football",
+#     "volleyball",
+#     "baseball",
+#     "softball",
+#     "track and field",
+#     "curling",
+#     "ping pong",
+#     "hockey",
+# ]
 
-print(new_line)
+# sports.insert(2, "horseback riding")
 
-new_line_2 = "***" + new_line.strip() + "***"
+# print(sports)
 
-print(new_line_2)
+# trav_dest = [
+#     "Beirut",
+#     "Milan",
+#     "Pittsburgh",
+#     "Buenos Aires",
+#     "Nairobi",
+#     "Kathmandu",
+#     "Osaka",
+#     "London",
+#     "Melbourne",
+# ]
 
-new_line_3 = new_line_2.replace("*", "+")
+# # del_index = trav_dest.index("London")
 
-print(new_line_3)
+# # del trav_dest[del_index]
+
+# trav_dest.remove("London")
+
+# print(trav_dest)
+
+# trav_dest = ['Beirut', 'Milan', 'Pittsburgh', 'Buenos Aires', 'Nairobi', 'Kathmandu', 'Osaka', 'Melbourne']
+
+# trav_dest.append("Guadalajara")
