@@ -1,10 +1,20 @@
-x = [1, 2, 3]
+wrds = [
+    "end",
+    "work",
+    "play",
+    "start",
+    "walk",
+    "look",
+    "open",
+    "rain",
+    "learn",
+    "clean",
+]
 
-y = x
+past_wrds = []
 
-x += [4, 5]
+for word in wrds:
+    word += "ed"
+    past_wrds.append(word)
 
-y = y + [6]
-
-print(x)
-print(y)
+print(past_wrds)
