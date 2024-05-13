@@ -1,6 +1,10 @@
-s = input("Enter some text\n")
-ac = ""
-for x in s:
-    ac = ac + x + "-" + x + "-"
+x = [1, 2, 3]
 
-print(ac)
+y = x
+
+x += [4, 5]
+
+y = y + [6]
+
+print(x)
+print(y)
