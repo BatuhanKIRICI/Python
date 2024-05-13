@@ -1,9 +1,6 @@
-num = [3, 5, 9]
+s = input("Enter some text\n")
+ac = ""
+for x in s:
+    ac = ac + x + "-" + x + "-"
 
-accum = []
-
-for x in num:
-    a = x**2
-    accum.append(a)
-
-print(accum)
+print(ac)
