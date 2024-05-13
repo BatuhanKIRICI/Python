@@ -1,14 +1,9 @@
-# def my_name(f_name, l_name):
-#     print(f"{f_name.title()} {l_name.title()}")
+num = [3, 5, 9]
 
+accum = []
 
-# my_name("baTUhan", "KIricI")
+for x in num:
+    a = x**2
+    accum.append(a)
 
-
-def my_name(f_name, l_name):
-    return f"{f_name.title()} {l_name.title()}"
-
-
-formatted_name = my_name("baTUhan", "KIricI")
-
-print(formatted_name)
+print(accum)
