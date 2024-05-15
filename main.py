@@ -21,12 +21,17 @@ num_2 = int(input("What is the second number?: "))
 
 for item in operations:
     operation_symbol = input("Select an operation symbol: ")
-    if operation_symbol == "+":
-        print(f"{num_1} {operation_symbol} {num_2} is {add(num_1, num_2)}.")
-    elif operation_symbol == "-":
-        print(f"{num_1} {operation_symbol} {num_2} is {subtract(num_1, num_2)}.")
-    elif operation_symbol == "*":
-        print(f"{num_1} {operation_symbol} {num_2} is {multiply(num_1, num_2)}.")
-    elif operation_symbol == "/":
-        print(f"{num_1} {operation_symbol} {num_2} is {divide(num_1, num_2)}.")
+    # if operation_symbol == "+":
+    #     print(f"{num_1} {operation_symbol} {num_2} is {add(num_1, num_2)}.")
+    # elif operation_symbol == "-":
+    #     print(f"{num_1} {operation_symbol} {num_2} is {subtract(num_1, num_2)}.")
+    # elif operation_symbol == "*":
+    #     print(f"{num_1} {operation_symbol} {num_2} is {multiply(num_1, num_2)}.")
+    # elif operation_symbol == "/":
+    #     print(f"{num_1} {operation_symbol} {num_2} is {divide(num_1, num_2)}.")
+    # break
+    calculation_function = operations[operation_symbol]
+    print(
+        f"{num_1} {operation_symbol} {num_2} is {calculation_function(num_1, num_2)}."
+    )
     break
