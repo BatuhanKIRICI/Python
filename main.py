@@ -1,8 +1,9 @@
-enemies = 1
+enemies = 3
 
 
 def increase_enemies():
-    enemies = 2
+    global enemies
+    enemies += 1
     print(f"Number of enemies is {enemies}.")
 
 
