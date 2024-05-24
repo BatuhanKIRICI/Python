@@ -33,14 +33,14 @@ while game_is_on:
                 print(
                     f"Too low! Number between {max(list_lower)} and {min(list_higher)}. And you have {count-5} shot to try!"
                 )
-            else:
-                print(f"You've got no shot!")
 
         elif guessed_num == computer_number and count > 6:
             print(f"Congratulations!!!")
             break
         else:
-            print(f"You've lost the game!")
+            print(
+                f"You've got no shot! You've lost the game! The number was {computer_number}."
+            )
             break
 
     elif difficulty == "e":
@@ -60,12 +60,12 @@ while game_is_on:
                 print(
                     f"Too low! Number between {max(list_lower)} and {min(list_higher)}. And you have {count} shot to try!"
                 )
-            else:
-                print(f"You've got no shot!")
 
         elif guessed_num == computer_number and count > 1:
             print(f"Congratulations!!!")
             break
         else:
-            print(f"You've lost the game!")
+            print(
+                f"You've got no shot! You've lost the game! The number was {computer_number}."
+            )
             break
