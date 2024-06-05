@@ -1,5 +1,4 @@
 from list import MENU, resources
-import math
 
 
 def coffee_machine():
@@ -39,76 +38,124 @@ def coffee_machine():
                     print(f"{item.title()}: {quantity}g")
                     print(f"Money: ${money}")
         elif choice_of_customer == "espresso":
-            print("Please insert coins!")
-            penny_quantity = int(input("How many pennies? "))
-            nickel_quantity = int(input("How many nickels? "))
-            dime_quantity = int(input("How many dimes? "))
-            quarter_quantity = int(input("How many quarters? "))
+            if (
+                resources["water"] >= MENU["espresso"]["ingredients"]["water"]
+                and resources["coffee"] >= MENU["espresso"]["ingredients"]["coffee"]
+            ):
+                print("Please insert coins!")
+                penny_quantity = int(input("How many pennies? "))
+                nickel_quantity = int(input("How many nickels? "))
+                dime_quantity = int(input("How many dimes? "))
+                quarter_quantity = int(input("How many quarters? "))
 
-            resources["water"] -= MENU["espresso"]["ingredients"]["water"]
-            resources["coffee"] -= MENU["espresso"]["ingredients"]["coffee"]
+                resources["water"] -= MENU["espresso"]["ingredients"]["water"]
+                resources["coffee"] -= MENU["espresso"]["ingredients"]["coffee"]
 
-            money += MENU["espresso"]["cost"]
+                money += MENU["espresso"]["cost"]
 
-            diff = round(
-                penny * penny_quantity
-                + nickel * nickel_quantity
-                + dime * dime_quantity
-                + quarter * quarter_quantity
-                - espresso_price,
-                2,
-            )
+                diff = round(
+                    penny * penny_quantity
+                    + nickel * nickel_quantity
+                    + dime * dime_quantity
+                    + quarter * quarter_quantity
+                    - espresso_price,
+                    2,
+                )
+
+                if diff >= 0:
+                    print(f"Here is ${diff} dollars in change. Preparing coffee...")
+                else:
+                    print("Sorry that's not enough money. Money refunded.")
+
+            elif resources["water"] < MENU["espresso"]["ingredients"]["water"]:
+                print("​Sorry there is not enough water.")
+
+            elif resources["coffee"] < MENU["espresso"]["ingredients"]["coffee"]:
+                print("​Sorry there is not enough coffee.")
 
         elif choice_of_customer == "latte":
-            print("Please insert coins!")
-            penny_quantity = int(input("How many pennies? "))
-            nickel_quantity = int(input("How many nickels? "))
-            dime_quantity = int(input("How many dimes? "))
-            quarter_quantity = int(input("How many quarters? "))
+            if (
+                resources["water"] >= MENU["latte"]["ingredients"]["water"]
+                and resources["coffee"] >= MENU["latte"]["ingredients"]["coffee"]
+                and resources["milk"] >= MENU["latte"]["ingredients"]["milk"]
+            ):
+                print("Please insert coins!")
+                penny_quantity = int(input("How many pennies? "))
+                nickel_quantity = int(input("How many nickels? "))
+                dime_quantity = int(input("How many dimes? "))
+                quarter_quantity = int(input("How many quarters? "))
 
-            resources["water"] -= MENU["latte"]["ingredients"]["water"]
-            resources["coffee"] -= MENU["latte"]["ingredients"]["coffee"]
-            resources["milk"] -= MENU["latte"]["ingredients"]["milk"]
+                resources["water"] -= MENU["latte"]["ingredients"]["water"]
+                resources["coffee"] -= MENU["latte"]["ingredients"]["coffee"]
+                resources["milk"] -= MENU["latte"]["ingredients"]["milk"]
 
-            money += MENU["latte"]["cost"]
+                money += MENU["latte"]["cost"]
 
-            diff = round(
-                penny * penny_quantity
-                + nickel * nickel_quantity
-                + dime * dime_quantity
-                + quarter * quarter_quantity
-                - latte_price,
-                2,
-            )
+                diff = round(
+                    penny * penny_quantity
+                    + nickel * nickel_quantity
+                    + dime * dime_quantity
+                    + quarter * quarter_quantity
+                    - latte_price,
+                    2,
+                )
+
+                if diff >= 0:
+                    print(f"Here is ${diff} dollars in change. Preparing coffee...")
+                else:
+                    print("Sorry that's not enough money. Money refunded.")
+
+            elif resources["water"] < MENU["latte"]["ingredients"]["water"]:
+                print("​Sorry there is not enough water.")
+
+            elif resources["coffee"] < MENU["latte"]["ingredients"]["coffee"]:
+                print("​Sorry there is not enough coffee.")
+
+            elif resources["coffee"] < MENU["latte"]["ingredients"]["milk"]:
+                print("​Sorry there is not enough milk.")
 
         elif choice_of_customer == "cappuccino":
-            print("Please insert coins!")
-            penny_quantity = int(input("How many pennies? "))
-            nickel_quantity = int(input("How many nickels? "))
-            dime_quantity = int(input("How many dimes? "))
-            quarter_quantity = int(input("How many quarters? "))
+            if (
+                resources["water"] >= MENU["cappuccino"]["ingredients"]["water"]
+                and resources["coffee"] >= MENU["cappuccino"]["ingredients"]["coffee"]
+                and resources["milk"] >= MENU["cappuccino"]["ingredients"]["milk"]
+            ):
+                print("Please insert coins!")
+                penny_quantity = int(input("How many pennies? "))
+                nickel_quantity = int(input("How many nickels? "))
+                dime_quantity = int(input("How many dimes? "))
+                quarter_quantity = int(input("How many quarters? "))
 
-            resources["water"] -= MENU["cappuccino"]["ingredients"]["water"]
-            resources["coffee"] -= MENU["cappuccino"]["ingredients"]["coffee"]
-            resources["milk"] -= MENU["cappuccino"]["ingredients"]["milk"]
+                resources["water"] -= MENU["cappuccino"]["ingredients"]["water"]
+                resources["coffee"] -= MENU["cappuccino"]["ingredients"]["coffee"]
+                resources["milk"] -= MENU["cappuccino"]["ingredients"]["milk"]
 
-            money += MENU["cappuccino"]["cost"]
+                money += MENU["cappuccino"]["cost"]
 
-            diff = round(
-                penny * penny_quantity
-                + nickel * nickel_quantity
-                + dime * dime_quantity
-                + quarter * quarter_quantity
-                - cappucino_price,
-                2,
-            )
+                diff = round(
+                    penny * penny_quantity
+                    + nickel * nickel_quantity
+                    + dime * dime_quantity
+                    + quarter * quarter_quantity
+                    - cappucino_price,
+                    2,
+                )
+                if diff >= 0:
+                    print(f"Here is ${diff} dollars in change. Preparing coffee...")
+                else:
+                    print("Sorry that's not enough money. Money refunded.")
+
+            elif resources["water"] < MENU["latte"]["ingredients"]["water"]:
+                print("​Sorry there is not enough water.")
+
+            elif resources["coffee"] < MENU["latte"]["ingredients"]["coffee"]:
+                print("​Sorry there is not enough coffee.")
+
+            elif resources["coffee"] < MENU["latte"]["ingredients"]["milk"]:
+                print("​Sorry there is not enough milk.")
+
         elif choice_of_customer == "off":
             break
-
-        if diff >= 0:
-            print(f"Here is ${diff} dollars in change. Preparing coffee...")
-        else:
-            print("Sorry that's not enough money. Money refunded.")
 
 
 coffee_machine()
