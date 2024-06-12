@@ -1,12 +1,11 @@
-class User:
-    def __init__(self, user_id, username):
-        self.id = user_id
-        self.username = username
+class Question:
+    def __init__(self, q_text, q_answer):
+        self.text = q_text
+        self.answer = q_answer
 
 
-user_1 = User("001", "Stephen")
-user_2 = User("002", "Michael")
+new_q = Question("Hello", "True")
 
 
-# print(user_1.id)
-# print(user_1.username)
+print(new_q.answer)
+print(new_q.text)
