@@ -1,12 +1,12 @@
-from prettytable import PrettyTable
+class User:
+    def __init__(self, user_id, username):
+        self.id = user_id
+        self.username = username
 
-table = PrettyTable()
 
-table.add_column("Pokemon Name", ["Pikachu", "Squirtle", "Charmander"])
+user_1 = User("001", "Stephen")
+user_2 = User("002", "Michael")
 
-# print(table)
 
-table.add_column("Type", ["Electric", "Water", "Fire"])
-table.align = "l"
-
-print(table)
+# print(user_1.id)
+# print(user_1.username)
