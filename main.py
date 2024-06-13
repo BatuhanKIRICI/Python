@@ -1,11 +1,13 @@
-class Question:
-    def __init__(self, q_text, q_answer):
-        self.text = q_text
-        self.answer = q_answer
+from data import question_data
+from question_model import Question
 
 
-new_q = Question("Hello", "True")
+question_bank = []
 
+for item in question_data:
+    question_text = item["text"]
+    question_answer = item["answer"]
+    new_question = Question(q_text=question_text, q_answer=question_answer)
+    question_bank.append(new_question)
 
-print(new_q.answer)
-print(new_q.text)
+print(question_bank[0])
