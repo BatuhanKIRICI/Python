@@ -1,18 +1,11 @@
-http_status = 550
+num_list = [33, 42, 5, 66, 77, 22, 16, 79, 36, 62, 78, 43, 88, 39, 53, 67, 89, 11]
 
-if http_status == 200 or http_status == 201:
-    print("Success")
-elif http_status == 400:
-    print("Bad request")
-elif http_status == 404:
-    print("Not found")
-elif http_status == 500 or http_status == 501:
-    print("Server error")
-else:
-    print("Unknown")
+count = 0
 
-match http_status:
-    case 200 | 201:
-        print("Success")
-    case _:
-        print("Unknown")
+for x, num in enumerate(num_list):
+    count += 1
+    if num == 36:
+        print("Number found at ", x)
+        break
+
+print(count)
