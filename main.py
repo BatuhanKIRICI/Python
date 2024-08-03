@@ -1,11 +1,5 @@
-num_list = [33, 42, 5, 66, 77, 22, 16, 79, 36, 62, 78, 43, 88, 39, 53, 67, 89, 11]
+set_a = {1, 2, 34, 5, 4}
+set_b = {3, 4, 5, 6, 7, 89}
 
-count = 0
-
-for x, num in enumerate(num_list):
-    count += 1
-    if num == 36:
-        print("Number found at ", x)
-        break
-
-print(count)
+print(set_a.intersection(set_b))
+print(set_a & set_b)
