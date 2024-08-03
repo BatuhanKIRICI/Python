@@ -1,21 +1,12 @@
-def divide_by(a, b):
-    return a / b
+# file = open("test.txt", mode="r")
 
+# data = file.readline()
 
-# try:
-#     divide_by(40, 1)
-# except:
-#     print("Something went wrong!")
+# print(data)
 
-# try:
-#     divide_by(40, 0)
-# except Exception as e:
-#     print("Something went wrong!", e)
-#     print(e.__class__)
+# file.close()
 
-try:
-    divide_by(40, 0)
-except ZeroDivisionError as e:
-    print("We can't divide by zero!", e)
-except Exception as e:
-    print("Something went wrong!", e)
+with open("test.txt", mode="r") as file:
+    data = file.readline()
+
+    print(data)
