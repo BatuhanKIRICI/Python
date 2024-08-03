@@ -1,12 +1,20 @@
-# file = open("test.txt", mode="r")
+# with open("newFile.txt", "w") as file:
+#     file.write("This is a new file created!")
 
-# data = file.readline()
+# with open("newFile.txt", "w") as file:
+#     file.writelines(
+#         ["This is a new file created.", "\nThis is another line to be added."]
+#     )
 
-# print(data)
+# with open("newFile.txt", "a") as file:
+#     file.writelines(
+#         ["This is a new file created.", "\nThis is another line to be added."]
+#     )
 
-# file.close()
-
-with open("test.txt", mode="r") as file:
-    data = file.readline()
-
-    print(data)
+try:
+    with open("sample/newFile.txt", "a") as file:
+        file.writelines(
+            ["\nThis is a new file created.", "\nThis is another line to be added."]
+        )
+except FileNotFoundError as e:
+    print("ERROR", e)
