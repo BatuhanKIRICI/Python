@@ -1,18 +1,21 @@
-def sum(*args):
-    sum = 0
-    for x in args:
-        sum += x
-    return sum
+def divide_by(a, b):
+    return a / b
 
 
-print(sum(4, 9, 8, 56))
+# try:
+#     divide_by(40, 1)
+# except:
+#     print("Something went wrong!")
 
+# try:
+#     divide_by(40, 0)
+# except Exception as e:
+#     print("Something went wrong!", e)
+#     print(e.__class__)
 
-def sum(**kwargs):
-    sum = 0
-    for k, v in kwargs.items():
-        sum += v
-    return round(sum, 2)
-
-
-print(sum(coffee=3.00, tea=2.25, cake=5.99))
+try:
+    divide_by(40, 0)
+except ZeroDivisionError as e:
+    print("We can't divide by zero!", e)
+except Exception as e:
+    print("Something went wrong!", e)
