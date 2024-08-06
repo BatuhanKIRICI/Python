@@ -1,22 +1,19 @@
-# str[start:stop:step]
-
-trial = "reversal"
-
-new_trial = trial[::-1]
-
-print(new_trial)
-
-# ----------------------
+menu = ["espresso", "mocha", "latte", "americano", "cappuccino", "cortado"]
 
 
-def string_reverse(str):
-    if len(str) == 0:
-        return str
-    else:
-        return string_reverse(str[1:]) + str[0]
+def find_coffee(coffee):
+    if coffee[0] == "c":
+        return coffee
 
 
-str_1 = "reversal"
-reverse = string_reverse(str_1)
+map_coffee = map(find_coffee, menu)
 
-print(reverse)
+# print(map_coffee)
+
+# for item in map_coffee:
+#     print(item)
+
+filter_coffee = filter(find_coffee, menu)
+
+for x in filter_coffee:
+    print(x)
