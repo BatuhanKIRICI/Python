@@ -1,20 +1,22 @@
-# with open("newFile.txt", "w") as file:
-#     file.write("This is a new file created!")
+# str[start:stop:step]
 
-# with open("newFile.txt", "w") as file:
-#     file.writelines(
-#         ["This is a new file created.", "\nThis is another line to be added."]
-#     )
+trial = "reversal"
 
-# with open("newFile.txt", "a") as file:
-#     file.writelines(
-#         ["This is a new file created.", "\nThis is another line to be added."]
-#     )
+new_trial = trial[::-1]
 
-try:
-    with open("sample/newFile.txt", "a") as file:
-        file.writelines(
-            ["\nThis is a new file created.", "\nThis is another line to be added."]
-        )
-except FileNotFoundError as e:
-    print("ERROR", e)
+print(new_trial)
+
+# ----------------------
+
+
+def string_reverse(str):
+    if len(str) == 0:
+        return str
+    else:
+        return string_reverse(str[1:]) + str[0]
+
+
+str_1 = "reversal"
+reverse = string_reverse(str_1)
+
+print(reverse)
