@@ -1,11 +1,9 @@
-class MyFirstClass:
-    print("Who wrote this?")
-    index = "Author-Book"
+# import platform
 
-    def hand_list(self, philosopher, book):
-        print(MyFirstClass.index)
-        print(philosopher + " wrote the book: " + book)
+# x = platform.system()
+# print(x)
 
+import platform
 
-whodunnit = MyFirstClass()
-whodunnit.hand_list("Sun Tzu", "The Art of War")
+x = dir(platform)
+print(x)
